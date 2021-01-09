@@ -61,7 +61,8 @@ class HomeController extends Controller
 
             Storage::disk('s3')->delete($user->filename);
             $path = $request->file('arquivo')->store('imagens', 's3');
-            Storage::disk('s3')->setVisibility($path, 'public');
+            $user->url = Storage::disk('s3')->url($path);
+            $user->filename = $path;
         }
         $user->name = $request->nome;
         $user->cep = $request->cep;
