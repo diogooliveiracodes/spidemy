@@ -11,8 +11,8 @@
                                     <h3 class="text-primary ml-4 text-left align-items-center"> Conteúdo inovador</h3>
                                 </div>
                                 <p class="lead text-muted text-justify">
-                                    E para completar seus estudos, você terá acesso ilimitado a centenas de exercícios 
-                                    para ajudar você com gramática, vocabulário e compreensão oral e escrita.
+                                    Diga adeus a aulas chatas e conteúdos sem graça. Agora você terá acesso ilimitado a centenas de aulas e exercícios 
+                                    dinâmicos para ajudar você com gramática, vocabulário e compreensão oral e escrita.
                                 </p>
                             </div>
                         </div>
@@ -23,8 +23,9 @@
                                     <h3 class="text-success ml-4 text-left align-items-center">Aulas ilimitadas</h3>
                                 </div>
                                 <p class="lead text-muted text-justify">
-                                    Nosso curso de inglês é totalmente dinâmico: as aulas ao vivo em grupo estão disponíveis 
-                                    24 horas por dia e proporcionam interação em tempo real com professores e alunos.
+                                    Todo o conteúdo da NVIEW está disponível 24 horas por dia e você pode assistir quantas vezes quiser. 
+                                    Prepare-se para uma maratona de conhecimento 
+                                    com o apoio dos melhores professores.
                                 </p>
                             </div>
                         </div>
@@ -36,8 +37,8 @@
                                 </div>
                                 <p class="lead text-muted text-justify">
                                     Você pode conhecer gratuitamente o nosso módulo introdutório sem precisar cadastrar nenhum
-                                    cartão ou meio de pagamento. Os demais módulos são oferecidos pelo valor de R$40,00 e você tem acesso ilimitado
-                                    <strong>POR UM ANO</strong>.
+                                    cartão ou meio de pagamento. Os demais módulos são oferecidos pelo valor de R$40,00 e você tem acesso ilimitado por
+                                    <strong>UM ANO INTEIRO</strong>.
                                 </p>
                             </div>
                         </div>
