@@ -14,7 +14,7 @@
                             <div class="row justify-content-center mx-0" style="width: 100%;">
                                 <div class="col-md-12">
                                     <p class="text-muted text-center text-right px-2 text-footer">
-                                        <span style="font-size: 4rem; font-family: Stencil Std, fantasy; color:#0084ff">Inscreva-se gratuitamente!</span>
+                                        <span class="span-footer" style="font-family: Stencil Std, fantasy; color:#0084ff">Inscreva-se gratuitamente!</span>
                                     </p>                                                                       
                                 </div>
                             </div>
@@ -27,7 +27,7 @@
             <div class="d-flex justify-content-between my-sm">
                 <div class="col-lg-6">
                     <a href="#" style="font-size: 2rem; color: white;">
-                        NVIEW
+                        <strong>NVIEW</strong>
                     </a>
                 </div>
                 <div class="col-lg-2 text-lg-center btn-wrapper">
@@ -100,7 +100,7 @@ export default {
 }
 
 .color-component-primary {
-    color: #003057;
+    color: #0084ff;
 }
 
 .bg-component-light {
@@ -114,5 +114,26 @@ export default {
 .text-footer:hover{
     transform: scale3d(1.1, 1.1, 1.1);
     transition: all 0.5s;
+}
+
+i:hover{
+    transform: scale3d(1.2, 1.2, 1.2);
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 556px) {
+    .span-footer{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (min-width: 557px) and (max-width: 992px) {
+    .span-footer{
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 993px) {
+    .span-footer{
+        font-size: 4rem;
+    }
 }
 </style>
