@@ -101,17 +101,26 @@
                     <div class="row mt-3">
                         <div class="col">
                             <div class="row justify-content-center">
+                                <form action="{{route('admin.capitulos.index', ['curso' => $curso])}}" method="GET">
+                                    <button class="btn btn-sm btn-secondary">Capítulos</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row justify-content-center">
                                 <form action="{{route('admin.cursos.edit', ['curso' => $curso])}}" method="GET">
                                     <button class="btn btn-sm btn-primary">Editar</button>
                                 </form>
                             </div>
                         </div>
                         <div class="col">
-                            <form action="{{route('admin.cursos.delete', ['curso' => $curso])}}" method="POST">
-                                @csrf
-                                @method('delete')
-                                <button class="btn btn-sm btn-danger">Excluir</button>
-                            </form>
+                            <div class="row justify-content-center">
+                                <form action="{{route('admin.cursos.delete', ['curso' => $curso])}}" method="POST">
+                                    @csrf
+                                    @method('delete')
+                                    <button class="btn btn-sm btn-danger">Excluir</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>

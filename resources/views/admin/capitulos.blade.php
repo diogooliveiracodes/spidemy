@@ -21,11 +21,12 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="row mt-3">
                         <div class="col">
                             <div class="row justify-content-center">
                                 <form action="{{route('admin.capitulos.index', ['curso' => $curso])}}" method="GET">
-                                    <button class="btn btn-sm btn-primary">Editar</button>
+                                    <button class="btn btn-sm btn-primary">Entrar</button>
                                 </form>
                             </div>
                         </div>

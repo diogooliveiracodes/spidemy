@@ -32,6 +32,13 @@
                     <div class="row mt-3">
                         <div class="col">
                             <div class="row justify-content-center">
+                                <form action="{{route('admin.aulas.index', ['capitulo' => $capitulo])}}" method="GET">
+                                    <button class="btn btn-sm btn-success">Aulas</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row justify-content-center">
                                 <form action="{{route('admin.capitulos.edit', ['capitulo' => $capitulo])}}" method="GET">
                                     <button class="btn btn-sm btn-primary">Editar</button>
                                 </form>

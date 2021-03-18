@@ -27,7 +27,10 @@ class AdminController extends Controller
     }
 
     public function aulas(){
-        return view('admin.aulas');
+        $cursos = Curso::all();
+        return view ('admin.aulas', [
+            'cursos' => $cursos
+        ]);
     }
 
     public function atividades(){

@@ -17,7 +17,10 @@ class CapituloController extends Controller
     public function index(Curso $curso, Capitulo $capitulo)
     {
         $capitulos = Capitulo::where('curso_id', $curso->id)->get();
-        return view('admin.capitulos.index', ['curso' => $curso, 'capitulos'=>$capitulos]);
+        return view('admin.capitulos.index', [
+            'curso' => $curso, 
+            'capitulos'=>$capitulos
+        ]);
     }
 
     /**

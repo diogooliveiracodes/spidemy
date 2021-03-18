@@ -31,6 +31,7 @@ Route::get('/aluno/aulas', 'HomeController@aulas')->name('aluno.aulas');
 Route::group(['prefix' => 'admin','middleware' => 'admin'], function(){
     Route::get('/', 'AdminController@index')->name('admin.index');
 
+    //cursos
     Route::group(['prefix' => 'cursos'], function(){
         Route::get('/', 'CursoController@index')->name('admin.cursos');
         Route::post('/', 'CursoController@store')->name('admin.cursos.store');
@@ -38,18 +39,27 @@ Route::group(['prefix' => 'admin','middleware' => 'admin'], function(){
         Route::post('/update/{curso}', 'CursoController@update')->name('admin.cursos.update');
         Route::delete('/{curso}', 'CursoController@destroy')->name('admin.cursos.delete');
     });
-    Route::group(['prefix' => 'cursos/capitulos'], function(){
+
+    //Capítulos
+    Route::group(['prefix' => 'capitulos'], function(){
         Route::get('/', 'AdminController@capitulos')->name('admin.capitulos');
         Route::get('/{curso}', 'CapituloController@index')->name('admin.capitulos.index');
         Route::post('/{curso}', 'CapituloController@store')->name('admin.capitulos.store');
-
         Route::get('/edit/{capitulo}', 'CapituloController@edit')->name('admin.capitulos.edit');
         Route::post('/update/{capitulo}', 'CapituloController@update')->name('admin.capitulos.update');
-
         Route::delete('/{capitulo}', 'CapituloController@destroy')->name('admin.capitulos.delete');
     });
+
     //Aulas
-    Route::get('/aulas', 'AdminController@aulas')->name('admin.aulas');
+    Route::group(['prefix' => 'aulas'], function(){
+        Route::get('/', 'AdminController@aulas')->name('admin.aulas');
+        Route::get('/curso/{curso}', 'AulaController@capitulos')->name('admin.aulas.capitulos');
+        Route::get('/capitulo/{capitulo}', 'AulaController@index')->name('admin.aulas.index');
+        Route::post('/capitulo/{capitulo}', 'AulaController@store')->name('admin.aulas.store');
+        Route::get('/edit/{aula}', 'AulaController@edit')->name('admin.aulas.edit');
+        Route::post('/update/{aula}', 'AulaController@update')->name('admin.aulas.update');
+        Route::delete('/{aula}', 'AulaController@destroy')->name('admin.aulas.delete');
+    });
     
     //Atividades
     Route::get('/atividades', 'AdminController@atividades')->name('admin.atividades');
@@ -59,7 +69,7 @@ Route::group(['prefix' => 'admin','middleware' => 'admin'], function(){
     
     //Controle de Usuários
     Route::get('/usuarios', 'AdminController@usuarios')->name('admin.usuarios');
-    });
+});
 
 
 
