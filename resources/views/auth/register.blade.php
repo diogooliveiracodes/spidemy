@@ -11,7 +11,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">Cadastrar</h5>
-            <form class="form-signin" method="POST" action="{{ route('cadastrar') }}">
+            <form class="form-signin" method="POST" action="{{ route('register') }}">
             @csrf
               <div class="form-label-group">
                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
