@@ -10,6 +10,11 @@ Vue.component('v-numeros', require('./welcome-components/Numeros.vue').default);
 Vue.component('v-footer', require('./welcome-components/Footer.vue').default);
 Vue.component('v-navbar', require('./welcome-components/Navbar.vue').default);
 
+// Globais
+Vue.component('base-nav', require('./components/BaseNav.vue').default);
+Vue.component('close-button', require('./components/CloseButton.vue').default);
+
+
 Vue.directive('scroll', {
     inserted: function (el, binding) {
       let f = function (evt) {

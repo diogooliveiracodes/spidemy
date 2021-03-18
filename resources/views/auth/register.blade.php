@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.applogin')
 
 @section('content')
 
@@ -11,7 +11,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">Cadastrar</h5>
-            <form class="form-signin" method="POST" action="{{ route('register') }}">
+            <form class="form-signin" method="POST" action="{{ route('cadastrar') }}">
             @csrf
               <div class="form-label-group">
                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -56,7 +56,7 @@
               <a class="d-block text-center mt-2 small" href="#">Já tenho uma conta</a>
               <hr class="my-4">
               <a class="btn btn-lg btn-facebook btn-block text-uppercase text-white bg-primary" href="{{route('loginfacebook')}}"><i class="fab fa-facebook-f mr-2"></i>Cadastrar com o Facebook</a>              
-              <a class="btn btn-lg btn-facebook btn-block text-uppercase text-white bg-secondary" href="{{route('logingithub')}}"><i class="fab fa-github mr-2"></i>Cadastrar com o Github</a>              
+              <a class="btn btn-lg btn-facebook btn-block text-uppercase text-dark bg-white" style="border-color:black"  href="{{route('logingithub')}}"><i class="fab fa-google mr-2"></i> Entrar com o Google</a>              
             </form>
           </div>
         </div>

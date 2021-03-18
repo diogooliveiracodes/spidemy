@@ -18,8 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    {{-- <link href="{{URL::asset('css/app.css')}}" rel="stylesheet"> --}}
-    <link rel="stylesheet" href="/css/app.css">
+    <link href="{{URL::asset('css/app.css')}}" rel="stylesheet">
+    {{-- <link rel="stylesheet" href="/css/app.css"> --}}
     <link rel="stylesheet" href="/css/navbar.css">
     <link href="/css/nucleo.css" rel="stylesheet">
 

@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="btn-wrapper text-center">
                                     <base-button type="neutral">
-                                        <img slot="icon" src="img/icons/common/github.svg">
+                                        <img slot="icon" src="img/icons/common/google.svg">
                                         Facebook
                                     </base-button>
 

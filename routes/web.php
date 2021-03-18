@@ -7,6 +7,15 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
+
+Route::get('/cadastre-se', function(){
+    return view('auth.register');
+})->name('cadastrar');
+
+Route::get('/entrar', function(){
+    return view('auth.login');
+})->name('entrar');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.applogin')
 
 @section('content')
 
@@ -72,8 +72,8 @@
                         @endif
                     </div>
                     <hr class="my-4">
-                    <a class="btn btn-lg btn-facebook btn-block text-uppercase text-white bg-primary" href="{{route('loginfacebook')}}"><i class="fab fa-facebook-f mr-2"></i> Entrar com o Facebook</a>              
-                    <a class="btn btn-lg btn-facebook btn-block text-uppercase text-white bg-secondary" href="{{route('logingithub')}}"><i class="fab fa-github mr-2"></i> Entrar com o Github</a>              
+                    <a class="btn btn-lg btn-facebook btn-block text-uppercase text-white" style="background:#1a538a" href="{{route('loginfacebook')}}"><i class="fab fa-facebook-f mr-2"></i> Entrar com o Facebook</a>              
+                    <a class="btn btn-lg btn-facebook btn-block text-uppercase text-dark bg-white" style="border-color:black"  href="{{route('logingithub')}}"><i class="fab fa-google mr-2"></i> Entrar com o Google</a>              
 
                 </form>
             </div>

@@ -1,13 +1,13 @@
 <template>
     <header class="header-global fixed-top" v-scroll="handleScroll">
         <base-nav class="navbar-main" :class="{'aplicarbg': aplicarbg, 'aplicarborda': aplicarbg}" transparent type="" effect="light" expand>
-            <a :class="{'cor-vermelha':aplicarbg}" slot="brand" class="navbar-brand mr-lg-5" href="/" style="font-size: 2rem;">
+            <a href="#" :class="{'cor-vermelha':aplicarbg}" slot="brand" class="navbar-brand mr-lg-5"  style="font-size: 2rem;">
                 NVIEW
             </a>
             <div class="row" slot="content-header" slot-scope="{closeMenu}">
                 <div class="col-6 collapse-brand">
-                    <a href="#">
-                        <img src="/img/logo.png">
+                    <a href="#" style="font-size: 2rem;">
+                        NVIEW
                     </a>
                 </div>
                 <div class="col-6 collapse-close">
@@ -15,37 +15,34 @@
                 </div>
             </div>
 
-            <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-                
-            </ul>
 
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-                    <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
-                        <i class="ni ni-bold-right d-lg-none"></i>
+                    <a :href="alunos" class="nav-link">
                         <span class="nav-link-inner--text" :class="{'aplicarbg': aplicarbg}">
                             Acesso alunos
                         </span>
                     </a>
                     <div class="vl"></div>
-                    <a slot="title" href="/register" class="nav-link" data-toggle="dropdown" role="button">
-                        <i class="ni ni-bold-right d-lg-none"></i>
+                    <a :href="cadastrar" class="nav-link">
                         <span class="nav-link-inner--text">
-                            <a class="btn btn-warning btn-md" style="background:#fffc00 !important; color:#212529; border: none; border-radius: 20px;">
+                            <a  class="btn btn-warning btn-md" style="background:#fffc00 !important; color:#212529; border: none; border-radius: 20px;">
                                 Cadastre-se
                             </a>
                         </span>
                     </a>
-
             </ul>
         </base-nav>
     </header>
 </template>
 <script>
-import BaseNav from "./../components/BaseNav";
-import BaseDropdown from "./../components/BaseDropdown";
-import CloseButton from "./../components/CloseButton";
+
 
 export default {
+    props:[
+        'welcome',
+        'alunos',
+        'cadastrar'
+    ],
     data(){
         return{
             aplicarbg: false
@@ -57,13 +54,18 @@ export default {
         }
     },
     components: {
-        BaseNav,
-        CloseButton,
-        BaseDropdown
+        
     }
 };
 </script>
 <style scoped>
+
+@media screen and (max-width: 992px) {
+    .vl{
+        display: none;
+    }
+}
+
 .nav-link-inner--text{
     font-size: 1.2rem;
 }
@@ -95,4 +97,5 @@ export default {
   height: 1rem;
   margin-top: 0.3rem;
 }
+
 </style>
