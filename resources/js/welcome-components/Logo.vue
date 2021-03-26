@@ -1,5 +1,5 @@
 <template>
-    <div style="font-size: 2rem;">
+    <div style="font-size: 2rem;" class="div-logo">
         <i class="fas fa-spider fa"></i> SPIDEMY
     </div>
 </template>
@@ -7,6 +7,7 @@
 <script>
 export default {
     name: 'Logo',
+    props:['principal'],
     data(){
         return{
             aplicarbg: false

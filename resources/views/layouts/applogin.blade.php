@@ -29,7 +29,10 @@
     <div id="app">
         <nav class="navbar navbar-expand-lg navbar-primary py-3" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="/"> NVIEW </a>
+                <a class="navbar-brand js-scroll-trigger" href="/" 
+                    style="color: #0084ff !important; font-family: Merriweather Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; font-weight: 700;">
+                    <i class="fas fa-spider fa" style="color: #0084ff"></i> SPIDEMY 
+                </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">

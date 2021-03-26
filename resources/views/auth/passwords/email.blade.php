@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.applogin')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
+<div class="container py-2">
+    <div class="row justify-content-center pt-5">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+            <div class="card" style="box-shadow: 0 0.5rem 1rem 0 rgb(0 0 0 / 10%);">
+                <h5 class="card-title text-center my-3">SOLICITAR NOVA SENHA</h5>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -18,7 +18,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -34,7 +34,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Send Password Reset Link') }}
+                                    {{ __('Envie o link no meu email') }}
                                 </button>
                             </div>
                         </div>

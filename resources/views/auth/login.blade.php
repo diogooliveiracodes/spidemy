@@ -54,7 +54,7 @@
                     </div>
     
                     <div class="form-group row">
-                        <div class="col-md-6">
+                        <div class="col-md-10">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
                                 <label class="form-check-label" for="remember">
@@ -63,7 +63,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-lg btn-primary btn-block text-uppercase p-3" type="submit">{{ __('Entrar') }}</button>
+                    <button class="btn btn-lg btn-primary btn-block text-uppercase p-3" style="background-color: #0084ff !important" type="submit">{{ __('Entrar') }}</button>
                     <div class="row justify-content-center">
                         @if (Route::has('password.request'))
                         <a class="btn btn-link col-sm-6" href="{{ route('password.request') }}">
