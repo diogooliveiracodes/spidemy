@@ -27,7 +27,7 @@
             <div class="d-flex justify-content-between my-sm">
                 <div class="col-lg-6">
                     <a href="#" style="font-size: 2rem; color: white;">
-                        <strong>NVIEW</strong>
+                        <i class="fas fa-spider fa text-white"></i><strong> SPIDEMY</strong>
                     </a>
                 </div>
                 <div class="col-lg-2 text-lg-center btn-wrapper">

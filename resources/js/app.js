@@ -13,6 +13,7 @@ Vue.component('v-navbar', require('./welcome-components/Navbar.vue').default);
 // Globais
 Vue.component('base-nav', require('./components/BaseNav.vue').default);
 Vue.component('close-button', require('./components/CloseButton.vue').default);
+Vue.component('logo', require('./welcome-components/Logo.vue').default);
 
 
 Vue.directive('scroll', {
